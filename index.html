@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/53030585?v=4">
-    <title>CKAY9</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="container">
-        <section class="content">
-            <img src="https://avatars.githubusercontent.com/u/53030585?v=4" alt="Profile Picture" class="pfp" />
-            <h1>CKAY9</h1>
-            <h3>Cameron Armstrong</h3>
-            <span>Rust, TypeScript, Java, and some others.</span>
-            <div class="links">
-                <a href="https://github.com/CKAY-9">GitHub</a>
-                <a href="/old.html">Old Site</a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://avatars.githubusercontent.com/u/53030585?v=4"
+		/>
+		<title>CKAY9</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="splash">
+				<section class="content">
+					<img
+						src="https://avatars.githubusercontent.com/u/53030585?v=4"
+						alt="Profile Picture"
+						class="pfp"
+					/>
+					<h1>CKAY9</h1>
+					<h3>Cameron Armstrong</h3>
+					<span>Rust, TypeScript, Java, and some others.</span>
+					<div class="links">
+						<a href="https://github.com/CKAY-9">GitHub</a>
+						<a href="/old.html">Old Site</a>
+					</div>
+				</section>
+
+                <a class="guest_link" href="#guest_list">
+                    <img src="./drop_down.svg" alt="Go to Guest List" width="48" height="48">
+                </a>
+			</div>
+
+            <div class="guest_list" id="guest_list">
+                <h2>Guest List</h2>
+                <div class="messages" id="messages">
+
+                </div>
+                <div class="guest_input">
+                    <section style="display: flex; gap: 0.5rem;">
+                        <input type="text" minlength="5" placeholder="Your message..." name="guest_message_input" id="guest_message_input">
+                    </section>
+                    <section style="display: flex; gap: 0.5rem;">
+                        <input style="flex: 1;" type="text" placeholder="Your name (optional)" name="guest_message_name" id="guest_message_name" >
+                        <button onclick="submitGuestMessage()">Submit</button>
+                    </section>
+                </div>
             </div>
-        </section>
-    </div>
-</body>
+		</div>
+
+        <script src="./index.js"></script>
+	</body>
 </html>
