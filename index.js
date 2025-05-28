@@ -12,6 +12,10 @@ const submitGuestMessage = async () => {
 		return;
 	}
 
+	if (message.length >= 255 || name.length >= 50) {
+		return;
+	}
+
 	messages_element.innerHTML += `
         <div class="message" id="message_${messages.length + 1}">
             <span>${
