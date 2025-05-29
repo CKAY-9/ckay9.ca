@@ -8,10 +8,10 @@
     scroll-behavior: smooth;
 }
 
-body {
+body, html {
 	color: white;
     font-size: 18px;
-
+    overflow-x: hidden;
     background-color: black;
     background: url("./background.gif");
     background-repeat: no-repeat;
