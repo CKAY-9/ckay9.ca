@@ -28,28 +28,74 @@
 					</div>
 				</section>
 
-                <a class="guest_link" href="#guest_list">
-                    <img src="./drop_down.svg" alt="Go to Guest List" width="48" height="48">
-                </a>
+				<a class="guest_link" href="#projects">
+					<img
+						src="./drop_down.svg"
+						alt="Go to Guest List"
+						width="48"
+						height="48"
+					/>
+				</a>
 			</div>
 
-            <div class="guest_list" id="guest_list">
-                <h2>Guest List</h2>
-                <div class="messages" id="messages">
+			<div class="projects" id="projects">
+				<div class="content">
+					<h2>Projects</h2>
+					<section class="projects_container">
+						<div class="project" href="cxm.html">
+							<h3>CxM</h3>
+							<span>Minecraft plugins</span>
+							<a href="https://github.com/CKAY-9/CxTokens">CxTokens</a>
+							<a href="https://github.com/CKAY-9/CxWar">CxWar</a>
+							<a href="https://github.com/CKAY-9/The-Walls">The Walls</a>
+						</div>
+						<div class="project" href="cxm.html">
+							<h3>CxW</h3>
+							<span>Web apps</span>
+							<a href="https://github.com/CKAY-9/k9r">K9R</a>
+							<a href="https://github.com/CKAY-9/gmn">gmn</a>
+							<a href="https://github.com/CKAY-9/LOLBot">LOLBot</a>
+						</div>
+					</section>
+				</div>
 
-                </div>
-                <div class="guest_input">
-                    <section style="display: flex; gap: 0.5rem;">
-                        <input type="text" minlength="5" placeholder="Your message..." name="guest_message_input" id="guest_message_input">
-                    </section>
-                    <section style="display: flex; gap: 0.5rem;">
-                        <input style="flex: 1;" type="text" placeholder="Your name (optional)" name="guest_message_name" id="guest_message_name" >
-                        <button onclick="submitGuestMessage()">Submit</button>
-                    </section>
-                </div>
-            </div>
+				<a class="guest_link" href="#guest_list">
+					<img
+						src="./drop_down.svg"
+						alt="Go to Guest List"
+						width="48"
+						height="48"
+					/>
+				</a>
+			</div>
+
+			<div class="guest_list" id="guest_list">
+				<h2>Guest List</h2>
+				<div class="messages" id="messages"></div>
+				<div class="guest_input">
+					<section style="display: flex; gap: 0.5rem">
+						<input
+							type="text"
+							minlength="5"
+							placeholder="Your message..."
+							name="guest_message_input"
+							id="guest_message_input"
+						/>
+					</section>
+					<section style="display: flex; gap: 0.5rem">
+						<input
+							style="flex: 1"
+							type="text"
+							placeholder="Your name (optional)"
+							name="guest_message_name"
+							id="guest_message_name"
+						/>
+						<button onclick="submitGuestMessage()">Submit</button>
+					</section>
+				</div>
+			</div>
 		</div>
 
-        <script src="./index.js"></script>
+		<script src="./index.js"></script>
 	</body>
 </html>
