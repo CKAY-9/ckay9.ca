@@ -2,6 +2,8 @@ const messages_element = document.getElementById("messages");
 let messages = [];
 const guest_message_input = document.getElementById("guest_message_input");
 const guest_message_name = document.getElementById("guest_message_name");
+const projects_link = document.getElementById("projects_link");
+const guests_link = document.getElementById("guest_list_link");
 const guestlist_api = "https://guestlist.ckay9.ca";
 
 const submitGuestMessage = async () => {
@@ -77,6 +79,19 @@ const getExistingMessages = async () => {
 	}
 };
 
+const onScroll = (e) => {
+	const view_height = window.innerHeight;
+	if (window.scrollY >= view_height) {
+		projects_link.style.display = "none";
+	}
+
+	if (window.scrollY >= view_height * 2) {
+		guests_link.style.display = "none";
+	}
+}
+
 (async () => {
 	await getExistingMessages();
 })();
+
+window.onscroll = onScroll;
