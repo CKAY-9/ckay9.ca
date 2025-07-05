@@ -13,89 +13,49 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="splash">
-				<section class="content">
-					<img
-						src="https://avatars.githubusercontent.com/u/53030585?v=4"
-						alt="Profile Picture"
-						class="pfp"
-					/>
-					<h1>CKAY9</h1>
-					<h3>Cameron Armstrong</h3>
-					<span>Rust, TypeScript, Java, and some others.</span>
-					<div class="links">
-						<a href="https://github.com/CKAY-9">GitHub</a>
+			<section class="information">
+				<div class="splash">
+					<section class="content">
+						<img
+							src="https://avatars.githubusercontent.com/u/53030585?v=4"
+							alt="Profile Picture"
+							class="pfp"
+						/>
+						<h1>CKAY9</h1>
+						<h3>Cameron Armstrong</h3>
+						<span>Rust, TypeScript, Java, and some others.</span>
+						<div class="links">
+							<a href="https://github.com/CKAY-9">GitHub</a>
+						</div>
+					</section>
+				</div>
+				<p style="text-align: center;">
+					Hello, I'm Cameron Armstrong (CKAY9), mainly doing web
+					development, but also interested in other fields.
+				</p>
+			</section>
+			<section style="flex: 1">
+				<section class="projects_container">
+					<div class="project" href="cxm.html">
+						<h3>CxM</h3>
+						<span>Minecraft plugins</span>
+						<a href="https://github.com/CKAY-9/CxTokens"
+							>CxTokens</a
+						>
+						<a href="https://github.com/CKAY-9/CxWar">CxWar</a>
+						<a href="https://github.com/CKAY-9/The-Walls"
+							>The Walls</a
+						>
+					</div>
+					<div class="project" href="cxm.html">
+						<h3>CxW</h3>
+						<span>Web apps</span>
+						<a href="https://github.com/CKAY-9/k9r">K9R</a>
+						<a href="https://github.com/CKAY-9/gmn">gmn</a>
+						<a href="https://github.com/CKAY-9/LOLBot">LOLBot</a>
 					</div>
 				</section>
-
-				<a class="guest_link" href="#projects" id="projects_link">
-					<img
-						src="./drop_down.svg"
-						alt="Go to Guest List"
-						width="48"
-						height="48"
-					/>
-				</a>
-			</div>
-
-			<div class="projects" id="projects">
-				<div class="content">
-					<h2>Projects</h2>
-					<section class="projects_container">
-						<div class="project" href="cxm.html">
-							<h3>CxM</h3>
-							<span>Minecraft plugins</span>
-							<a href="https://github.com/CKAY-9/CxTokens">CxTokens</a>
-							<a href="https://github.com/CKAY-9/CxWar">CxWar</a>
-							<a href="https://github.com/CKAY-9/The-Walls">The Walls</a>
-						</div>
-						<div class="project" href="cxm.html">
-							<h3>CxW</h3>
-							<span>Web apps</span>
-							<a href="https://github.com/CKAY-9/k9r">K9R</a>
-							<a href="https://github.com/CKAY-9/gmn">gmn</a>
-							<a href="https://github.com/CKAY-9/LOLBot">LOLBot</a>
-						</div>
-					</section>
-				</div>
-
-				<a class="guest_link" href="#guest_list" id="guest_list_link">
-					<img
-						src="./drop_down.svg"
-						alt="Go to Guest List"
-						width="48"
-						height="48"
-					/>
-				</a>
-			</div>
-
-			<div class="guest_list" id="guest_list">
-				<h2>Guest List</h2>
-				<div class="messages" id="messages"></div>
-				<div class="guest_input">
-					<section style="display: flex; gap: 0.5rem">
-						<input
-							type="text"
-							minlength="5"
-							placeholder="Your message..."
-							name="guest_message_input"
-							id="guest_message_input"
-						/>
-					</section>
-					<section style="display: flex; gap: 0.5rem">
-						<input
-							style="flex: 1"
-							type="text"
-							placeholder="Your name (optional)"
-							name="guest_message_name"
-							id="guest_message_name"
-						/>
-						<button onclick="submitGuestMessage()">Submit</button>
-					</section>
-				</div>
-			</div>
+			</section>
 		</div>
-
-		<script src="./index.js"></script>
 	</body>
 </html>
