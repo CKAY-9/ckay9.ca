@@ -14,10 +14,10 @@ html {
 	font-size: 18px;
 	overflow-x: hidden;
 	background-color: black;
-	background: url("./background.gif");
+	background: url("./background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-position: 50% 50%;
 }
 
 a {
