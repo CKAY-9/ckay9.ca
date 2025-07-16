@@ -147,6 +147,7 @@ a:hover {
 
 .links > a {
 	padding: 0.5rem;
+	object-fit: contain;
 }
 
 .pfp {
