@@ -6,8 +6,6 @@ export type BlogPostPreviewProps = {
 };
 
 const BlogPostPreview = (props: BlogPostPreviewProps) => {
-  console.log(props.post);
-
   return (
     <>
       <div className={style.previewContainer} style={{"background": `url(${props.post.thumbnail_url})`}}>
