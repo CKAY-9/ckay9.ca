@@ -19,7 +19,7 @@ export const getBlogPostsByPage = async (page: number): Promise<BlogPost[]> => {
         });
 
         return request.data;
-    } catch (ex) {
+    } catch {
         return [];
     }
 }
@@ -32,7 +32,7 @@ export const getBlogPostByID = async (blog_id: number): Promise<BlogPost | null>
         });
 
         return request.data
-    } catch (ex) {
+    } catch {
         return null;
     }
 }
@@ -45,8 +45,7 @@ export const getBlogPostsThatAreProjects = async (): Promise<BlogPost[]> => {
         });
 
         return request.data;
-    } catch (ex) {
-        console.log(ex);
+    } catch {
         return [];
     }
 }

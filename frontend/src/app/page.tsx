@@ -44,8 +44,8 @@ const IndexPage = async () => {
         <section className={style.textSection}>
           <h2>👋</h2>
           <p>
-            Hi, I'm Cameron Armstrong (CKAY9, CKAY-9, whatever), a developer from Vancouver, BC. I've been programming for multiple years now, and have experience
-            in multiple services and tools like Vercel, AWS, Git, Cloudflare, etc. I'm also comfortable in many different programming languages
+            Hi, I&apos;m Cameron Armstrong (CKAY9, CKAY-9, whatever), a developer from Vancouver, BC. I&apos;ve been programming for multiple years now, and have experience
+            in multiple services and tools like Vercel, AWS, Git, Cloudflare, etc. I&apos;m also comfortable in many different programming languages
             and their framework and libraries (e.g. Python and Flask/FastAPI/DJango).
           </p>
         </section>
@@ -53,7 +53,7 @@ const IndexPage = async () => {
           <h2>🌟</h2>
           <p>
             I have always been interesting in technology and programming, and began to work on my own personal projects in 2022. I quickly fell in love with web developement,
-            but also enjoy working on any mods for games (e.g. Minecraft plugins, Garry's Mod addons, etc.), simple systems for small things, or whatever else.
+            but also enjoy working on any mods for games (e.g. Minecraft plugins, Garry&apos;s Mod addons, etc.), simple systems for small things, or whatever else.
           </p>
         </section>
         <section className={style.textSection}>
@@ -66,7 +66,7 @@ const IndexPage = async () => {
         </section>
         <section className={style.dev}>
           <h2>Projects</h2>
-          <span>Explore some of my projects that I've written about.</span>
+          <span>Explore some of my projects that I&apos;ve written about.</span>
           {projects.length <= 0 ? (
             <span>No projects available.</span>
           ) : (
@@ -85,7 +85,7 @@ const IndexPage = async () => {
         </section>
         <section className={style.dev}>
           <Link href="/blog"><h2>Blog</h2></Link>
-          <span>Keep track of what I've been doing or thinking of or whatever.</span>
+          <span>Keep track of what I&apos;ve been doing or thinking of or whatever.</span>
           <Link href="/blog">Click here to see.</Link>
         </section>
       </main>

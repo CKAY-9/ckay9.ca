@@ -1,7 +1,6 @@
 import { getBlogPostByID } from "@/api/blog";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
-import Link from "next/link";
 import BlogPostClient from "./client";
 import Image from "next/image";
 import style from "./blog.module.scss";

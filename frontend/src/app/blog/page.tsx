@@ -16,7 +16,7 @@ const BlogPage = () => {
             <Header />
             <main className="container">
                 <h1>CKAY9 DEV BLOG</h1>
-                <span>Catch up with whatever I've been doing or thinking about.</span>
+                <span>Catch up with whatever I&apos;ve been doing or thinking about.</span>
                 <BlogClient />
             </main>
             <Footer />
