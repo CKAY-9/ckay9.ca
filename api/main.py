@@ -15,7 +15,7 @@ class BlogPost(SQLModel, table=True):
     body: str
     date: str = Field(default_factory=lambda: datetime.datetime.now().isoformat())
 
-engine = create_engine(os.environ.get("SQLITE_HOST") or "sqlite:///ckay9dev.db")
+engine = create_engine(os.environ.get("DATABASE_URL") or "sqlite:///ckay9dev.db")
 def get_session():
     with Session(engine) as session:
         yield session
