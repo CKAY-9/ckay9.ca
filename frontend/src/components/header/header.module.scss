@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary);
+
+    a {
+        padding: 1rem 2rem;
+    }
+}

@@ -1,0 +1,9 @@
+.thumbnail {
+    min-width: 10rem;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: var(--shdw1);
+}

@@ -1,0 +1,23 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+
+  * {
+    color: white !important;
+  }
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+
+  a {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--secondary);
+
+    &:hover {
+      background-color: var(--primary);
+    }
+  }
+}
