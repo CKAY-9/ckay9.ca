@@ -6,7 +6,7 @@ import { getBlogPostsByPage } from "@/api/blog";
 
 export const generateMetadata = (): Metadata => {
     return {
-        title: "Blog - CKAY9 DEV",
+        title: "Blog - CKAY9 Dev",
         description: "Catch up with whatever CKAY9 has been doing or thinking about."
     }
 }
