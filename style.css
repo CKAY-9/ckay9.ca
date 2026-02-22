@@ -47,6 +47,13 @@ a {
   margin-bottom: 3rem;
 }
 
+.icon {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
